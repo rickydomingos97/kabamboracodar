@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-color: #7c3aed;
+  --bg-white: #fbfaff;
+  --text-primary: #403937;
+  --text-secondary: #756966;
+  --bt-primary: #7c3aed;
+  --bt-secondary: #e2d6ff;
+
+  --danger: #e25858;
+  --purple: #8284fa;
+  --purple-dark: #5e60ce;
+  --blue: #4ea8de;
+  --blue-dark: #1e6f9f;
+  --gray-100: #f2f2f2;
+  --gray-200: #d9d9d9;
+  --gray-300: #808080;
+  --gray-400: #333333;
+  --gray-500: #262626;
+  --gray-600: #1a1a1a;
+  --gray-700: #0d0d0d;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  background: var(--bg-color);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  min-height: 100vh;
+}
+
+nav {
+  min-width: 17.5rem;
+  display: flex;
+  flex-direction: column;
+
+  padding: 3.2rem 2.7rem 0 3.5rem;
+  min-width: 11.5rem;
+}
+
+.logo img {
+  width: 5rem;
+  margin-bottom: 6rem;
+}
+
+nav ul {
+  color: var(--gray-100);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 125%;
+  list-style: none;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-bottom: 3.6rem;
+}
+
+nav ul li img {
+  padding: 1rem;
+}
+
+main .inner {
+  height: 100%;
+  background: var(--bg-white);
+  margin-top: 0.8rem;
+  border-top-left-radius: 3.2rem;
+}
