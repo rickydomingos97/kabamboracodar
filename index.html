@@ -20,26 +20,60 @@
 
       <ul>
         <li>
-          <img src="assests/boards.svg" alt="">
-          Boards
+          <a href="#" class="active">
+            <ion-icon name="tablet-portrait"></ion-icon>
+            Boards
+          </a>
         </li>
         <li>
-          <img src="assests/teams.svg" alt="">
-          Teams
+          <a href="#">
+            <ion-icon name="people-circle-outline"></ion-icon>
+            Teams
+          </a>
+
         </li>
         <li>
-          <img src="assests/reposrt.svg" alt="">
-          Reports</li>
+          <a href="#">
+            <ion-icon name="document-text-outline"></ion-icon>
+            Reports
+          </a>
+
+        </li>
         <li>
-          <img src="assests/settings.svg" alt="">Settings</li>
+          <a href="#">
+            <ion-icon name="settings-outline"></ion-icon>
+            Settings
+          </a>
+        </li>
       </ul>
     </nav>
+
     <main>
       <div class="inner">
+        <section class="title-avatar">
+          <h1>My Kaban <img src="assests/pencil.svg" alt=""></h1>
+          <a href="#">
+            <img src="assests/profile.svg" alt="">
+          </a>
+        </section>
 
+        <section class="filter">
+          <button>
+            <ion-icon name="filter-outline"></ion-icon>
+            <span>Filter</span>
+          </button>
+
+          <div class="input-wrapper">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" name="search" id="search" placeholder="Search for cards, topics or roles...">
+          </div>
+        </section>
       </div>
     </main>
   </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
