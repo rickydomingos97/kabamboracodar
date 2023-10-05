@@ -3,46 +3,53 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="assests/logoKodi.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
-  <title>Kaban</title>
+
+  <title>КАНБАН</title>
 </head>
 
 <body>
   <div class="app">
     <nav>
       <div class="logo">
-        <img src="assests/logo.svg" alt="">
+        <img src="assests/logoKodi.svg" alt="">
+        <i class="fa-sharp fa-solid fa-elephant" style="color: #f5f5f5;"></i>
       </div>
 
       <ul>
         <li>
           <a href="#" class="active">
             <ion-icon name="tablet-portrait"></ion-icon>
-            Boards
+            Доски
           </a>
         </li>
         <li>
           <a href="#">
             <ion-icon name="people-circle-outline"></ion-icon>
-            Teams
+            Команды
           </a>
 
         </li>
         <li>
           <a href="#">
             <ion-icon name="document-text-outline"></ion-icon>
-            Reports
+            Отчеты
           </a>
 
         </li>
         <li>
           <a href="#">
             <ion-icon name="settings-outline"></ion-icon>
-            Settings
+            Настройки
           </a>
         </li>
       </ul>
@@ -51,29 +58,94 @@
     <main>
       <div class="inner">
         <section class="title-avatar">
-          <h1>My Kaban <img src="assests/pencil.svg" alt=""></h1>
+          <h1>Мой Канбан <img src="assests/pencil.svg" alt=""></h1>
           <a href="#">
-            <img src="assests/profile.svg" alt="">
+            <img class="profile-photo" src="assests/profile.svg" alt="">
           </a>
         </section>
 
         <section class="filter">
           <button>
             <ion-icon name="filter-outline"></ion-icon>
-            <span>Filter</span>
+            <span>Фильтр</span>
           </button>
 
           <div class="input-wrapper">
             <ion-icon name="search-outline"></ion-icon>
-            <input type="text" name="search" id="search" placeholder="Search for cards, topics or roles...">
+            <input type="text" name="search" id="search" placeholder="Поиск карточек, тем или ролей...">
           </div>
         </section>
+
+        <section class="kanban">
+          <div class="todo">
+            <h2>делать</h2>
+            <div class="dropzone">
+              <div class="card" draggable="true">
+                <h3>#boraCodar um Kanban 🧑‍💻</h3>
+                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir </p>
+                <div class="tags">
+                  <span>rocketseat</span>
+                  <span>desafio</span>
+                </div>
+              </div>
+
+              <div class="card" draggable="true">
+                <h3>Manter a ofensiva 🔥</h3>
+                <p>Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva</p>
+                <div class="tags">
+                  <span>rocketseat</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="doing">
+            <h2>в процессе</h2>
+            <div class="dropzone">
+
+              <div class="card" draggable="true">
+                <h3>Manter a ofensiva 🔥</h3>
+                <p>Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva</p>
+                <div class="tags">
+                  <span>rocketseat</span>
+                </div>
+              </div>
+
+              <div class="card" draggable="true">
+                <h3>Manter a ofensiva 🔥</h3>
+                <p>Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva</p>
+                <div class="tags">
+                  <span>rocketseat</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="done">
+            <h2>Сделано</h2>
+            <div class="dropzone">
+
+              <div class="card" draggable="true">
+                <h3>Manter a ofensiva 🔥</h3>
+                <p>Manter minha atividade na plataforma da Rocketseat para não perder a ofensiva</p>
+                <div class="tags">
+                  <span>rocketseat</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
       </div>
     </main>
   </div>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
